@@ -1,0 +1,7 @@
+<h1>Edit Data</h1>
+<%= form_tag("/cars/update/#{@data.id}") do %>
+<label>merk</label><input type="text" name ="merk" value ="<%= @data.merk %>">
+<label>publish</label><input type="text" name ="publish" value ="<%= @data.publish %>">
+<label>harga</label><input type="text" name ="harga" value ="<%= @data.harga %>">	
+<input type="submit" value ="Simpan">
+<% end %>
